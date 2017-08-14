@@ -16,8 +16,9 @@ with code at https://github.com/akappen/s3_direct_upload
 The first task is to implement the signing of a policy document.  The requirements
 are outlined in Amazon's documentation:
 
-(1)   http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-authentication-HTTPPOST.html
-(2)   http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-post-example.html
+*(1)*   http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-authentication-HTTPPOST.html
+
+*(2)*   http://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-post-example.html
 
 We use CargoSense's code for signing policies.  In (2), an example is given so that
 that the signing method can be tested.  This test is implemented in `test/auth_test.exs`
